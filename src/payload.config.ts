@@ -34,7 +34,10 @@ export default buildConfig({
   }),
   sharp,
   plugins: [
-    payloadCloudPlugin(),
+    payloadCloudPlugin({
+      // This will automatically handle file storage in the cloud
+      // No additional configuration needed for basic file storage
+    }),
     // storage-adapter-placeholder
   ],
 })
