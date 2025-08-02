@@ -195,6 +195,3 @@ temp/
 .Trashes
 ehthumbs.db
 Thumbs.db
-
-# Lock files
-yarn.lock* package-lock.json* pnpm-lock.yaml*
