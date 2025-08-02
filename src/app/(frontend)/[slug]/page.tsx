@@ -86,7 +86,11 @@ export default async function PropertyDetailPage({ params }: PropertyDetailPageP
             {/* Property Image */}
             <div className="relative w-full h-64 md:h-96 lg:h-[500px] overflow-hidden">
               <Image
-                src={typeof property.image === 'object' ? property.image.url || '' : ''}
+                src={
+                  typeof property.image === 'object'
+                    ? property.image.url || 'https://picsum.photos/id/164/200/300'
+                    : 'https://picsum.photos/id/164/200/300'
+                }
                 alt={
                   typeof property.image === 'object'
                     ? property.image.alt || property.title
